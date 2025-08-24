@@ -5,11 +5,7 @@ let correctAnswer = 0
 
 
 
-const resetQuiz = () => {
-    correctAnswer = 0
-    currentQuestion = 0
-    showQuestion()
-}
+
 
 
 // Functions
@@ -74,6 +70,12 @@ const finishQuiz = () => {
     document.querySelector('.progress--bar').style.width = `100%`
 }
 
+
+const resetQuiz = () => {
+    correctAnswer = 0
+    currentQuestion = 0
+    showQuestion()
+}
 // Events
 document.querySelector('button').addEventListener('click', resetQuiz)
 
