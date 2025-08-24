@@ -3,11 +3,6 @@ import questions from './questions.js';
 let currentQuestion = 0;
 let correctAnswer = 0
 
-
-
-
-
-
 // Functions
 const showQuestion = () => {
     if (questions[currentQuestion]) {
@@ -70,7 +65,6 @@ const finishQuiz = () => {
     document.querySelector('.progress--bar').style.width = `100%`
 }
 
-
 const resetQuiz = () => {
     correctAnswer = 0
     currentQuestion = 0
@@ -78,7 +72,6 @@ const resetQuiz = () => {
 }
 // Events
 document.querySelector('button').addEventListener('click', resetQuiz)
-
 
 // Script
 showQuestion()
